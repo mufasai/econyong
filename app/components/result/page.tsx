@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 
-export function ResultSection() {
+// Ekspor ResultSection sebagai default export
+const ResultSection = () => {
   return (
     <section className="flex flex-col items-center px-6 py-12 bg-white mb-24">
       {/* Section Header */}
@@ -70,4 +71,6 @@ export function ResultSection() {
       </div>
     </section>
   );
-}
+};
+
+export default ResultSection;
