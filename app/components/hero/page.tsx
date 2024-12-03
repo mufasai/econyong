@@ -24,8 +24,11 @@ const HeroSection: React.FC = () => {
           Join the movement for a cleaner planet. Earn points by recycling and
           redeem them for exciting rewards!
         </p>
-        <div className="flex flex-col md:flex-row justify-center gap-6 mt-24">
+        <div className="lg:block hidden flex flex-col md:flex-row justify-center gap-6 mt-24">
           <Image src="/hero.svg" width={1296} height={343} alt="hero" />
+        </div>
+        <div className="lg:hidden flex flex-col md:flex-row justify-center gap-6 mt-16">
+          <Image src="/mobile-hero.svg" width={484} height={730} alt="hero" />
         </div>
       </div>
     </section>

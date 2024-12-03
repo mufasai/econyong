@@ -6,15 +6,15 @@ const Footer = () => {
   return (
     <footer className=" py-8 text-white">
       <div className="container mx-auto px-4">
-        {/* Menggunakan Flex untuk membagi area */}
-        <div className="flex justify-between items-center">
+        {/* Menggunakan Flex yang responsif */}
+        <div className="flex flex-wrap justify-between items-center gap-4">
           {/* Copyright Kiri */}
-          <div className="text-[#9795B5] text-sm">
+          <div className="text-[#9795B5] text-sm text-center lg:text-left w-full lg:w-auto">
             © 2024 Chet GPT Team | All Rights Reserved
           </div>
 
           {/* Navigasi Tengah */}
-          <div className="flex space-x-12">
+          <div className="flex justify-center space-x-6 w-full lg:w-auto">
             <Link
               href="/"
               className="text-[#9795B5] hover:text-green-400 transition"
@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
 
           {/* Ikon Sosial Media Kanan */}
-          <div className="flex space-x-8">
+          <div className="flex justify-center space-x-6 w-full lg:w-auto">
             <a
               href="https://facebook.com"
               target="_blank"
